@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Campus Notifications System - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A professional React.js application designed to manage and display campus-wide notifications with a focus on priority sorting, real-time API integration, and mandatory activity logging.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Priority Inbox**: Automatically sorts and displays the top 10 most critical notifications (Placement > Result > Event).
+- **Real-time API Integration**: Connects to the campus evaluation server to fetch live notifications.
+- **Mandatory Logging Middleware**: Every user action (clicks, filters, page changes) is logged and reported to the server.
+- **Dynamic Filtering**: Filter notifications by category (Placement, Result, Event, or All).
+- **Pagination**: Efficiently browse through large numbers of notifications.
+- **Read/Unread Tracking**: Visual indicators for seen and unseen messages.
+- **Simple, Professional UI**: Built with Material UI for a clean, minimalist experience.
 
-### `npm start`
+## 🛠️ Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React.js**: Frontend framework.
+- **Material UI (MUI)**: Professional component library.
+- **Axios**: Handling API requests and middleware.
+- **Environment Variables**: Secure storage for tokens and API URLs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+```text
+src/
+├── api/             # API connection and request logic
+├── components/      # UI components (List, Filter, Pagination, etc.)
+├── middleware/      # Logging middleware for activity tracking
+├── pages/           # Main page layout (Home.jsx)
+├── utils/           # Sorting and priority logic
+└── App.js           # Theme setup and entry point
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📸 Screenshots
 
-### `npm run build`
+### API Testing (ReqBin/Postman)
+![API Test Success](./screenshots/api_test_success.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ Setup & Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Configure Environment Variables**:
+   Create a `.env` file in the root directory and add your credentials:
+   ```env
+   REACT_APP_ACCESS_TOKEN=your_bearer_token_here
+   REACT_APP_API_BASE_URL=/evaluation-service
+   ```
 
-### `npm run eject`
+3. **Run the Application**:
+   ```bash
+   npm start
+   ```
+   The app will run at [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📊 Development Phases
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project was built following a 10-phase assessment:
+1. **Phase 1-2**: User Registration and Token Authentication.
+2. **Phase 3**: Implementation of Logging Middleware.
+3. **Phase 4**: Project Directory Structuring.
+4. **Phase 5-6**: API Integration and Custom Priority Logic.
+5. **Phase 7-8**: UI Component Development and Logging Integration.
+6. **Phase 9-10**: Testing and Final Refinement.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+**Developed by [Your Name/Roll No]**
